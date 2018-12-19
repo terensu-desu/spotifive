@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   font-family: 'Fira Sans', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -50,6 +50,32 @@ button {
 
 .btn__cta:active {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.examples {
+  margin-top: 5rem;
+}
+
+.examples__header {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.examples__box {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50vw;
+  border: 1px solid rgb(30, 215, 96);
+  border-radius: 5px;
+}
+
+.examples__item {
+  padding: 0.5rem;
 }
 
 /*
