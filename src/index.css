@@ -1,14 +1,90 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Fira Sans', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(40, 40, 40);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+input,
+button {
+  border: none;
+}
+
+.header {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.header__main {
+  font-size: 5rem;
+  font-weight: 100;
+  margin-bottom: 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.header__sub {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.btn__cta {
+  font-size: 0.9rem;
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  color: rgb(40, 40, 40);
+  background-color: rgb(30, 215, 96);
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+  padding: 0.7rem 1rem;
+  margin: 0.5rem 1rem;
+  transition: all 0.5s;
+}
+
+.btn__cta:active {
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+/*
+  --Colors
+  green: rgb(30, 215, 96);
+  light-black: rgb(40, 40, 40);
+  black: rgb(24, 24, 24);
+  grey: rgb(170, 170, 170);
+  sand: rgb(200, 200, 200);
+  white: rgb(255, 255, 255);
+  blue: #4688d7
+
+  --Padding
+  padding-xs  : 5px;
+  padding-sm  : 10px;
+  padding     : 15px;
+  padding-lg  : 30px;
+  padding-xl  : 60px;
+
+  --Margin
+  margin-xs  : 5px;
+  margin-sm  : 10px;
+  margin     : 15px;
+  margin-lg  : 30px;
+  margin-xl  : 60px;
+
+  --Borders
+  border-radius: 15px;
+
+  --Font-sizes
+  x-small: 11px;
+  small: 14px;
+  medium: 16px;
+  large: 20px;
+  x-large: 24px;
+  xx-large: 36px;
+  xxx-large: 52px;
+*/
