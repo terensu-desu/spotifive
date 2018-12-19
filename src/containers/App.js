@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 import Keys from '../config/keys';
 import Header from '../components/Header';
+import Examples from '../components/Examples';
 
 class App extends Component {
   constructor() {
@@ -79,26 +80,10 @@ class App extends Component {
   render() {
     const { getAuth, getTops } = this;
     const { accessToken } = this.state;
-    let callToAction = (
-      <button type="button" className="button" name="spotifyLogin" onClick={getAuth}>
-        Sign in through Spotify
-      </button>
-    );
-    if (accessToken) {
-      callToAction = (
-        <Fragment>
-          <button type="button" className="button" name="artists" onClick={getTops}>
-            Get top artists
-          </button>
-          <button type="button" className="button" name="tracks" onClick={getTops}>
-            Get top tracks
-          </button>
-        </Fragment>
-      );
-    }
     return (
       <main className="app">
         <Header getAuth={getAuth} getTops={getTops} accessToken={accessToken} />
+        <Examples />
       </main>
     );
   }
