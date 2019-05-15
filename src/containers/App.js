@@ -1,8 +1,9 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 import Keys from '../config/keys';
 import Header from '../components/Header';
 import Examples from '../components/Examples';
+import Footer from '../components/Footer/Footer';
 
 class App extends Component {
   constructor() {
@@ -84,6 +85,7 @@ class App extends Component {
       <main className="app">
         <Header getAuth={getAuth} getTops={getTops} accessToken={accessToken} />
         <Examples />
+        <Footer />
       </main>
     );
   }
