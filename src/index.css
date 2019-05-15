@@ -69,13 +69,32 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 50vw;
+  min-width: 35vw;
+  max-width: 55vw;
   border: 1px solid rgb(30, 215, 96);
   border-radius: 5px;
 }
 
 .examples__item {
-  padding: 0.5rem;
+  margin: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  height: 375px;
+  width: 300px;
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.footer a {
+  text-decoration: none;
+}
+.footer a:visited,
+.footer a:active,
+.footer a:link {
+  color: rgb(30, 215, 96);
 }
 
 /*
