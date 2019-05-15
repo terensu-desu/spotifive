@@ -23,7 +23,6 @@ const Header = ({ accessToken, getAuth, getTops }) => {
     <div className="header">
       <h1 className="header__main">Spotifive</h1>
       <h2 className="header__sub">Show the world what you're jamming to</h2>
-      <h3 className="header__author">Created by Terence Mangram</h3>
       <div className="header__call-to-action">{callToAction}</div>
     </div>
   );
